@@ -1,0 +1,409 @@
+/* Import fons CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* CSS Navbar */
+
+#navbar .container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+    align-items: center;
+}
+
+#navbar .container .toggle i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#navbar .container .logo h1 {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Home page CSS */
+
+#home-page .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #24242B;
+}
+
+#home-page .container .content-text h1 {
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#home-page .container .content-text p {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+}
+
+#home-page .container .content-text .btn-travel {
+    text-decoration: none;
+    padding: .70rem 5rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: .15rem;
+    background-color: #32323B;
+    font-weight: 400;
+    transition: ease-in-out .3s;
+}
+
+#home-page .container .content-text .btn-travel:hover {
+    transition: ease-in-out .3s;
+    background-color: #9696EB;
+}
+
+#home-page .container .content-text .btn-travel i {
+    margin-left: .50rem;
+}
+
+#home-page .container .content-image {
+    text-align: right;
+}
+
+#home-page .container .content-image img {
+    animation: animation ease-in-out 5s infinite;
+    width: 70%;
+}
+
+
+/* menu slide  home-page*/
+
+.menu-slide .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 18%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: #292931;
+    left: -22rem;
+    transition: ease-in-out .3s;
+    padding: 10% 0%;
+}
+
+.menu-slide .container.active {
+    transition: ease-in-out .3s;
+    left: 0;
+}
+
+.menu-slide .container .logo h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 450;
+    font-size: 2rem;
+}
+
+.menu-slide .container .itens a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255, 0.80);
+    transition: ease-in-out .3s;
+    position: relative;
+}
+
+.menu-slide .container .itens a:hover {
+    color: #9696EB;
+    transition: ease-in-out .3s;
+}
+
+.menu-slide .container .itens a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    border-radius: 80rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: ease-in-out .3s;
+}
+
+.menu-slide .container .itens a:hover::before {
+    transition: ease-in-out .3s;
+    width: 50%;
+    background-color: #fff;
+}
+
+.menu-slide .container .exit a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+
+.menu-slide .container .exit a:hover {
+    color: #9696EB;
+    transition: ease-in-out .3s;
+}
+
+.menu-slide .container .exit a::before {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -.20rem;
+    left: 50%;
+    transition: ease-in-out .3s;
+    transform: translateX(-50%);
+}
+
+.menu-slide .container .exit a:hover::before {
+    width: 100%;
+    background-color: #fff;
+    transition: ease-in-out .3s;
+}
+
+
+/* CSS SOFT SKILLS */
+
+#landing-skills .container {
+    width: 100%;
+    padding: 3% 10%;
+    justify-content: space-between;
+    display: flex;
+    align-content: center;
+    background-color: #292931;
+}
+
+#landing-skills .container .left-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#landing-skills .container .left-skill h2 {
+    color: rgb(255, 255, 255, 0.85);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#landing-skills .container .left-skill p {
+    color: rgb(255, 255, 255, 0.70);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+#landing-skills .container .left-skill a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.70);
+    font-size: 1.3rem;
+    box-shadow: 3px 2px 1px 1px #fff;
+    display: inline-block;
+    padding: .70rem 1rem;
+    font-weight: bold;
+    background-color: #9696EB;
+    transition: ease-in-out .3s;
+    margin-top: 1rem;
+}
+
+#landing-skills .container .left-skill a:hover {
+    box-shadow: 0px 0px 1px #fff;
+    transition: ease-in-out .3s;
+}
+
+#landing-skills .right-skill {
+    width: 40%;
+    text-align: center;
+    background-color: #9696EB;
+    padding: 2rem;
+    box-shadow: -10px 10px 1px #FFFFFF;
+    border-radius: .15rem;
+    animation: animation ease-in-out 5s infinite;
+}
+
+#landing-skills .right-skill h1 {
+    color: #fff;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+#landing-skills .right-skill h1::after {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    content: '';
+    background-color: #ffff;
+    border-top-left-radius: 80rem;
+    border-bottom-left-radius: 80rem;
+    border-top-right-radius: 80rem;
+    border-bottom-right-radius: 80rem;
+    left: 0;
+    bottom: -1rem;
+}
+
+#landing-skills .right-skill h1::before {
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    content: '';
+    border-top-right-radius: 80rem;
+    border-bottom-right-radius: 80rem;
+    border-top-left-radius: 80rem;
+    border-bottom-left-radius: 80rem;
+    background-color: #27272F;
+    left: 0;
+    bottom: -1rem;
+    z-index: 99;
+}
+
+
+/* Stylization of h1 before texts */
+
+#landing-skills .right-skill h1:nth-child(2)::before {
+    width: 30%;
+}
+
+#landing-skills .right-skill h1:nth-child(3)::before {
+    width: 60%;
+}
+
+#landing-skills .right-skill h1:nth-child(4)::before {
+    width: 60%;
+}
+
+#landing-skills .right-skill h1:nth-child(4)::before {
+    width: 60%;
+}
+
+#landing-skills .right-skill h1:nth-child(5)::before {
+    width: 30%;
+}
+
+#landing-skills .right-skill h1:nth-child(6)::before {
+    width: 40%;
+}
+
+#landing-skills .right-skill h1:nth-child(7)::before {
+    width: 30%;
+}
+
+
+/* landing projects CSS */
+
+#landing-projects .container {
+    width: 100%;
+    display: flex;
+    padding: 3% 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #24242B;
+}
+
+#landing-projects .box-projects {
+    cursor: pointer;
+    box-shadow: -10px 10px 1px rgb(0, 0, 0, 0.25);
+    animation: animation ease-in-out 5s infinite;
+    transition: ease-in-out .3s;
+    position: relative;
+    border-radius: 1rem;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
+#landing-projects .box-projects .overlay-projects {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: ease-in-out .3s;
+}
+
+#landing-projects .box-projects:hover .overlay-projects {
+    opacity: 1;
+}
+
+#landing-projects .box-projects img {
+    transition: ease-in-out .3s;
+    width: 40rem;
+}
+
+#landing-projects .box-projects:hover img {
+    transition: ease-in-out .3s;
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+
+#landing-projects .box-projects .overlay-projects .text-projects {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#landing-projects .box-projects .overlay-projects .text-projects h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#landing-projects .box-projects .overlay-projects .text-projects p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 350;
+    padding-bottom: 1rem;
+}
+
+#landing-projects .box-projects .overlay-projects .text-projects a {
+    text-decoration: none;
+    color: #fff;
+    padding: .50rem 2rem;
+    background-color: #9696EB;
+    border-radius: 80rem;
+    font-size: 1.1rem;
+}
+
+
+/* Key frames animation */
+
+@keyframes animation {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

@@ -1,0 +1,82 @@
+/* line effect responsive, remove */
+
+@media screen and (max-width: 1854px) {
+    body::before {
+        display: none;
+    }
+}
+
+
+/* home-page responsive */
+
+@media screen and (max-width: 1024px) {
+    /* navbar responsive */
+    #navbar .container {
+        padding: 5% 10%;
+    }
+    /* home page responsive */
+    #home-page .container .content-text {
+        padding-bottom: 20%;
+    }
+    #home-page .container .content-image {
+        text-align: left;
+    }
+    #home-page .container .content-image img {
+        width: 70%;
+    }
+    #home-page .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-slide .container.active {
+        width: 100%;
+    }
+    /* soft skills responsive */
+    #landing-skills .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #landing-skills .right-skill {
+        width: 100%;
+    }
+    #landing-skills .container .left-skill {
+        padding-bottom: 10%;
+    }
+    #landing-projects .container {
+        justify-content: center;
+    }
+}
+
+
+/* size fonts, buttons, spaces  responsive */
+
+@media screen and (max-width: 700px) {
+    /* navbar responsive 700px */
+    #navbar .container .logo h1 {
+        font-size: 1.2rem;
+    }
+    /* home page responsive */
+    #home-page .container .content-text h1 {
+        font-size: 1.2rem;
+    }
+    #home-page .container .content-text p {
+        font-size: .9rem;
+    }
+    #home-page .container .content-text .btn-travel {
+        padding: .70rem 3rem;
+    }
+    /* soft skills responsive 700px */
+    #landing-skills .container .left-skill h2 {
+        font-size: 1.2rem;
+    }
+    #landing-skills .container .left-skill p {
+        font-size: .9rem;
+    }
+    #landing-skills .container .left-skill a {
+        font-size: 1rem;
+    }
+    #landing-skills .right-skill h1 {
+        font-size: 1rem;
+    }
+}
